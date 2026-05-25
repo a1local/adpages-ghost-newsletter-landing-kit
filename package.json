@@ -1,0 +1,38 @@
+{
+  "name": "adpages-ghost-newsletter-landing-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-only Ghost newsletter landing-page kit with UTM links, theme snippets, Open Graph checks, and QA checklists.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "ghost",
+    "newsletter",
+    "utm-builder",
+    "landing-page-qa",
+    "publisher-tools",
+    "adpages"
+  ],
+  "bin": {
+    "adpages-ghost-kit": "bin/adpages-ghost-kit.mjs"
+  },
+  "files": [
+    "README.md",
+    "PRIVACY.md",
+    "bin/*.mjs",
+    "config/*.json",
+    "examples/*.csv",
+    "examples/*.json",
+    "scripts/*.mjs",
+    "snippets/*.hbs",
+    "src/*.mjs"
+  ],
+  "scripts": {
+    "check": "node --check src/ghost-kit.mjs && node --check bin/adpages-ghost-kit.mjs && node --check scripts/check.mjs && node --check scripts/smoke.mjs && node scripts/check.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "generate:sample": "node bin/adpages-ghost-kit.mjs --input examples/campaign-links.json --out-dir .tmp/ghost-newsletter-landing-kit"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

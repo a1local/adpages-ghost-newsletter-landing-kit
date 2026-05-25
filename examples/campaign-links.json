@@ -1,0 +1,53 @@
+{
+  "localOnly": true,
+  "siteUrl": "https://example-publisher.test",
+  "landingPath": "/newsletter/",
+  "newsletterName": "The Local Growth Brief",
+  "defaultUtm": {
+    "medium": "newsletter_landing",
+    "campaign": "local-growth-brief"
+  },
+  "openGraph": {
+    "title": "The Local Growth Brief",
+    "description": "Weekly practical notes for local business owners who want cleaner campaigns and better landing pages.",
+    "image": "https://example-publisher.test/content/images/local-growth-brief-share.jpg",
+    "url": "https://example-publisher.test/newsletter/"
+  },
+  "campaigns": [
+    {
+      "label": "Instagram bio",
+      "source": "instagram",
+      "medium": "social",
+      "content": "bio-link",
+      "notes": "Use as the public profile link during the launch week."
+    },
+    {
+      "label": "LinkedIn post",
+      "source": "linkedin",
+      "medium": "social",
+      "content": "founder-post",
+      "notes": "Use in the first founder announcement post."
+    },
+    {
+      "label": "Partner footer",
+      "source": "partner-site",
+      "medium": "referral",
+      "content": "footer-cta",
+      "notes": "Give to trusted partner sites as a tagged resource link."
+    },
+    {
+      "label": "QR flyer",
+      "source": "print",
+      "medium": "qr",
+      "content": "event-flyer",
+      "notes": "Use on in-person event handouts."
+    }
+  ],
+  "openGraphChecklist": [
+    "Unique page title under 60 characters",
+    "Description states who the newsletter is for",
+    "Share image is 1200 by 630 pixels or equivalent ratio",
+    "Canonical URL matches the live newsletter landing page",
+    "Signup CTA appears before the first scroll on mobile"
+  ]
+}

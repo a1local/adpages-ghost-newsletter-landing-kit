@@ -1,0 +1,39 @@
+{
+  "id": "adpages-ghost-newsletter-landing-kit",
+  "name": "AdPages Ghost Newsletter Landing Kit",
+  "version": "0.1.0",
+  "surface": "Ghost theme integration and resource kit",
+  "audience": [
+    "Ghost publishers",
+    "newsletter operators",
+    "local media sites",
+    "publisher growth consultants"
+  ],
+  "jobsToBeDone": [
+    "Build tagged links for newsletter landing-page promotion",
+    "Drop a reusable CTA card into a Ghost theme",
+    "Check Open Graph and newsletter signup readiness before publishing",
+    "Create a simple proof artifact for GitHub or tutorial distribution"
+  ],
+  "localOnly": true,
+  "requiresGhostAdminApi": false,
+  "requiresContentApi": false,
+  "requiresOAuth": false,
+  "requiresCredentials": false,
+  "hostedBackend": false,
+  "trackingBeacons": false,
+  "hiddenBacklinks": false,
+  "writesDataAutomatically": false,
+  "publishingPosition": {
+    "primary": "GitHub resource and Ghost integration guide",
+    "secondary": "Ghost theme marketplace tutorial or theme companion resource",
+    "futurePaidUpgrade": "Hosted landing-page QA monitor, screenshots, link checks, and campaign reporting"
+  },
+  "publishBlockers": [
+    "Install snippets in a real Ghost theme and validate with GScan",
+    "Test against supported Ghost versions",
+    "Capture screenshots for README and marketplace/tutorial listings",
+    "Confirm support URL and privacy URL",
+    "Confirm final license and repository URL"
+  ]
+}
