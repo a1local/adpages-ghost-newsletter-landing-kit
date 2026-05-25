@@ -1,0 +1,19 @@
+{{! Optional landing-page schema. Keep ghost_head in the theme because Ghost already outputs core metadata. }}
+<script type="application/ld+json" data-adpages-newsletter-schema>
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{#if newsletter_name}}{{json newsletter_name}}{{else}}{{json @site.title}}{{/if}},
+  "url": {{#if landing_url}}{{json landing_url}}{{else}}{{json @site.url}}{{/if}},
+  "description": {{#if newsletter_description}}{{json newsletter_description}}{{else}}{{json @site.description}}{{/if}},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{json @site.title}},
+    "url": {{json @site.url}}
+  },
+  "potentialAction": {
+    "@type": "SubscribeAction",
+    "target": {{#if landing_url}}{{json landing_url}}{{else}}{{json @site.url}}{{/if}}
+  }
+}
+</script>

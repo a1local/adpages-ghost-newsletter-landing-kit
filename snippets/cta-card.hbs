@@ -1,0 +1,46 @@
+<section class="adpages-newsletter-cta" aria-labelledby="{{#if cta_id}}{{cta_id}}{{else}}newsletter-cta{{/if}}-title">
+  <div class="adpages-newsletter-cta__content">
+    <p class="adpages-newsletter-cta__eyebrow">
+      {{#if eyebrow}}{{eyebrow}}{{else}}Newsletter{{/if}}
+    </p>
+    <h2 id="{{#if cta_id}}{{cta_id}}{{else}}newsletter-cta{{/if}}-title" class="adpages-newsletter-cta__title">
+      {{#if heading}}{{heading}}{{else}}Get the next useful issue{{/if}}
+    </h2>
+    <p class="adpages-newsletter-cta__copy">
+      {{#if copy}}{{copy}}{{else}}Short practical notes for readers who want better campaigns without the noise.{{/if}}
+    </p>
+  </div>
+
+  {{#if @site.members_enabled}}
+    <form class="adpages-newsletter-cta__form" data-members-form="subscribe">
+      <label class="adpages-newsletter-cta__label" for="{{#if cta_id}}{{cta_id}}{{else}}newsletter-cta{{/if}}-email">
+        Email address
+      </label>
+      <div class="adpages-newsletter-cta__row">
+        <input
+          id="{{#if cta_id}}{{cta_id}}{{else}}newsletter-cta{{/if}}-email"
+          class="adpages-newsletter-cta__input"
+          data-members-email
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="{{#if placeholder}}{{placeholder}}{{else}}you@example.com{{/if}}"
+          required
+        >
+        <button class="adpages-newsletter-cta__button" type="submit">
+          {{#if button_text}}{{button_text}}{{else}}Subscribe{{/if}}
+        </button>
+      </div>
+      <p class="adpages-newsletter-cta__success" data-members-success>
+        {{#if success_message}}{{success_message}}{{else}}Check your inbox to confirm your subscription.{{/if}}
+      </p>
+      <p class="adpages-newsletter-cta__error" data-members-error></p>
+    </form>
+  {{else}}
+    {{#if fallback_url}}
+      <a class="adpages-newsletter-cta__button" href="{{fallback_url}}">
+        {{#if button_text}}{{button_text}}{{else}}Subscribe{{/if}}
+      </a>
+    {{/if}}
+  {{/if}}
+</section>

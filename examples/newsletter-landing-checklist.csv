@@ -1,0 +1,11 @@
+Phase,Item,Owner,Status,Evidence
+Strategy,Newsletter promise is specific to a reader outcome,Marketing,Todo,Hero headline and intro copy
+Strategy,Landing page names the publishing cadence,Marketing,Todo,Subhead or FAQ section
+CTA,Primary signup form appears above the fold on mobile,Design,Todo,Mobile screenshot
+CTA,CTA card is repeated after proof or sample issue section,Design,Todo,Theme template screenshot
+Trust,Page shows author or publication proof,Editorial,Todo,Byline archive or testimonial block
+Tracking,Every launch link uses source medium campaign and content,Marketing,Todo,Generated campaign link CSV
+Open Graph,Title description image and canonical URL are checked,Developer,Todo,Share preview screenshot
+Ghost,Snippet partials are installed in the active theme,Developer,Todo,Theme diff or GScan output
+QA,Signup form is tested with a tagged URL,Developer,Todo,Test subscriber record
+QA,No hidden backlinks tracking beacons or external scripts are added,Developer,Todo,Source review notes
